@@ -1,0 +1,99 @@
+/****************************************************************************
+* File name    :	SY09_FwLib.sct
+* Function     :	the Keil Scatter File for SY09 Firmware Library
+* Author       : 	coins
+* Date         :	2014/06/25
+* Version      :    v1.0
+* Description  :
+* ModifyRecord :
+****************************************************************************/
+
+/***************************************************************************
+************************** Flash Memory Map (512K)**************************
+***************************************************************************/
+/*			 ___________	0x1008_0000			
+**			|			|
+**			|			|
+**			|	CODE	|
+**			|			|
+**			|___________|	0x1000_0100
+**			|			|
+**			|	RESET	|
+**			|___________|	0x1000_0000
+***************************************************************************/
+
+/***************************************************************************
+************************** SRAM Memory Map ****************************
+***************************************************************************/
+/*			 ___________	0x2002_0000			
+**			|			|  	
+**			|	DATA	|
+**			|___________|
+**			|			|	
+**			|	STACK	|	
+**			|___________|	0x2001_4000	
+**			|			|	HEAP_TOP
+**			|			| 	
+**			|	HEAP	|
+**			|			|
+**			|___________|	0x2001 4000
+***************************************************************************/
+
+
+LOAD_ROM 0x10000000 0x80000 	; Name of load region (LOAD_ROM),
+                             	; Start address for load region (0x10000000),
+                             	; Maximum size of load region (0x80000)
+{
+	; CODE
+	EXEC_ROM 0x10000000 0x80000   	; Name of first exec region (EXEC_ROM),
+                             		; Start address for exec region (0x10000000),
+                             		; Maximum size of first exec region (0x80000)
+    {
+		* (RESET, +FIRST)		; Place RESET section at 0x10000000
+        * (+RO)              	; Place all code and RO data into
+                             	; this exec region
+    }
+
+	ER1 +0 ALIGN 0x20
+	{
+		*(.align_code1)
+	}
+
+	ER2 +0 ALIGN 0x20
+	{
+		*(.align_code2)
+	}
+
+	; DATA/BSS
+	DATA 0x20020000-0x8000 0x8000    
+								; DATA and BSS Space
+    {
+	    *(.ram_code)
+        * (+RW, +ZI)         	; Place all RW and ZI data into
+                             	; this exec region			 
+    }	
+
+	; STACK
+	STACK_TOP ImageBase(DATA) UNINIT 0x0 	; Stack top 
+	{
+		startup_SY09.o (STACK_TOP)	
+	}
+	STACK ImageBase(DATA) EMPTY -0x4000	; Stack Space 									 
+	{	
+	}
+
+	; HEAP
+	HEAP_TOP ImageBase(STACK) UNINIT 0x0 	; Heap top
+	{
+		startup_SY09.o (HEAP_TOP)	
+	}
+	HEAP ImageBase(STACK) EMPTY -0 		; Heap Space
+	{			
+	}
+	HEAP_BOTTOM ImageBase(HEAP) UNINIT 0x0	; Heap Bottom
+	{
+		startup_SY09.o (HEAP_BOTTOM)	
+	}
+		
+}
+

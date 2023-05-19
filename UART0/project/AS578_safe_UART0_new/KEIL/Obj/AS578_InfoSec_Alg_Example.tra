@@ -1,0 +1,70 @@
+*** Creating Trace Output File '.\Obj\AS578_InfoSec_Alg_Example.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\core_cm3.o"'
+### List of Objects: adding '".\obj\system_sy09.o"'
+### List of Objects: adding '".\obj\startup_sy09.o"'
+### List of Objects: adding '".\obj\bvd.o"'
+### List of Objects: adding '".\obj\crc.o"'
+### List of Objects: adding '".\obj\dma.o"'
+### List of Objects: adding '".\obj\efc.o"'
+### List of Objects: adding '".\obj\gpio.o"'
+### List of Objects: adding '".\obj\i2c.o"'
+### List of Objects: adding '".\obj\iso7816.o"'
+### List of Objects: adding '".\obj\retarget.o"'
+### List of Objects: adding '".\obj\serial.o"'
+### List of Objects: adding '".\obj\sci.o"'
+### List of Objects: adding '".\obj\scm.o"'
+### List of Objects: adding '".\obj\spi.o"'
+### List of Objects: adding '".\obj\sqi.o"'
+### List of Objects: adding '".\obj\ssi.o"'
+### List of Objects: adding '".\obj\swps.o"'
+### List of Objects: adding '".\obj\sy09_regs.o"'
+### List of Objects: adding '".\obj\timer.o"'
+### List of Objects: adding '".\obj\uart.o"'
+### List of Objects: adding '".\obj\vpwm.o"'
+### List of Objects: adding '".\obj\kflash.o"'
+### List of Objects: adding '".\obj\otp.o"'
+### List of Objects: adding '".\obj\sflashbk.o"'
+### List of Objects: adding '".\obj\sflashmap.o"'
+### List of Objects: adding '".\obj\xflashbk.o"'
+### List of Objects: adding '".\obj\xflashmap.o"'
+### List of Objects: adding '".\obj\main.o"'
+### List of Objects: adding '".\obj\safecmd.o"'
+### List of Objects: adding '".\obj\operationkey.o"'
+### List of Objects: adding '".\obj\bulkitem.o"'
+### List of Objects: adding '".\obj\bulkusb.o"'
+### List of Objects: adding '".\obj\ctrlitem.o"'
+### List of Objects: adding '".\obj\ctrlusb.o"'
+### List of Objects: adding '".\obj\usbbase.o"'
+### List of Objects: adding '".\obj\usbprotocol.o"'
+### List of Objects: adding '"..\..\..\Libraries\HAL\FPAL\FP_LIB.lib"'
+### List of Objects: adding '"..\..\..\Libraries\HAL\ISAL\AES_LIB.lib"'
+### List of Objects: adding '"..\..\..\Libraries\HAL\ISAL\DES_LIB.lib"'
+### List of Objects: adding '"..\..\..\Libraries\HAL\ISAL\ECC_LIB.lib"'
+### List of Objects: adding '"..\..\..\Libraries\HAL\ISAL\RSA_LIB.lib"'
+### List of Objects: adding '"..\..\..\Libraries\HAL\ISAL\TRNG_LIB.lib"'
+### List of Objects: adding '"..\..\..\Libraries\HAL\ISAL\SM\SM1_LIB.lib"'
+### List of Objects: adding '"..\..\..\Libraries\HAL\ISAL\SM\SM2_LIB.lib"'
+### List of Objects: adding '"..\..\..\Libraries\HAL\ISAL\SM\SM3_LIB.lib"'
+### List of Objects: adding '"..\..\..\Libraries\HAL\ISAL\SM\SM4_LIB.lib"'
+### List of Objects: adding '"..\..\..\Libraries\HAL\ISAL\SSF33_LIB.lib"'
+### List of Objects: adding '"..\..\..\Libraries\HAL\ISAL\MD5_LIB.lib"'
+### List of Objects: adding '"..\..\..\Libraries\HAL\ISAL\SHA1_LIB.lib"'
+### List of Objects: adding '"..\..\..\Libraries\HAL\ISAL\SHA256_LIB.lib"'
+### List of Objects: adding '"..\..\..\Libraries\HAL\ISAL\SHA512_LIB.lib"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\obj\core_cm3.o" ".\obj\system_sy09.o" ".\obj\startup_sy09.o" ".\obj\bvd.o" ".\obj\crc.o" ".\obj\dma.o" ".\obj\efc.o" ".\obj\gpio.o" ".\obj\i2c.o" ".\obj\iso7816.o" ".\obj\retarget.o" ".\obj\serial.o" ".\obj\sci.o" ".\obj\scm.o" ".\obj\spi.o" ".\obj\sqi.o" ".\obj\ssi.o" ".\obj\swps.o" ".\obj\sy09_regs.o" ".\obj\timer.o" ".\obj\uart.o" ".\obj\vpwm.o" ".\obj\kflash.o" ".\obj\otp.o" ".\obj\sflashbk.o" ".\obj\sflashmap.o" ".\obj\xflashbk.o" ".\obj\xflashmap.o" ".\obj\main.o" ".\obj\safecmd.o" ".\obj\operationkey.o" ".\obj\bulkitem.o" ".\obj\bulkusb.o" ".\obj\ctrlitem.o" ".\obj\ctrlusb.o" ".\obj\usbbase.o" ".\obj\usbprotocol.o" E:\desktop\UART0\Libraries\HAL\FPAL\FP_LIB.lib E:\desktop\UART0\Libraries\HAL\ISAL\AES_LIB.lib E:\desktop\UART0\Libraries\HAL\ISAL\DES_LIB.lib E:\desktop\UART0\Libraries\HAL\ISAL\ECC_LIB.lib E:\desktop\UART0\Libraries\HAL\ISAL\RSA_LIB.lib E:\desktop\UART0\Libraries\HAL\ISAL\TRNG_LIB.lib E:\desktop\UART0\Libraries\HAL\ISAL\SM\SM1_LIB.lib E:\desktop\UART0\Libraries\HAL\ISAL\SM\SM2_LIB.lib E:\desktop\UART0\Libraries\HAL\ISAL\SM\SM3_LIB.lib E:\desktop\UART0\Libraries\HAL\ISAL\SM\SM4_LIB.lib E:\desktop\UART0\Libraries\HAL\ISAL\SSF33_LIB.lib E:\desktop\UART0\Libraries\HAL\ISAL\MD5_LIB.lib E:\desktop\UART0\Libraries\HAL\ISAL\SHA1_LIB.lib E:\desktop\UART0\Libraries\HAL\ISAL\SHA256_LIB.lib E:\desktop\UART0\Libraries\HAL\ISAL\SHA512_LIB.lib --library_type=microlib --strict --scatter "..\..\..\Libraries\LCF\KEIL\SY09_FwLib.sct" 
+--entry Reset_Handler --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\AS578_InfoSec_Alg_Example.map" -o .\Obj\AS578_InfoSec_Alg_Example.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Obj\AS578_InfoSec_Alg_Example.axf'
+### ADS-LD Command File: '.\Obj\AS578_InfoSec_Alg_Example.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Obj\AS578_InfoSec_Alg_Example.lnp', Handle=0x000008C8
+### Writing '.lnp' file
+### ADS-LD Command file '.\Obj\AS578_InfoSec_Alg_Example.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<flash_device>
+  <exe>$TOOLKIT_DIR$\config\flashloader\Synochip\FlashSY09.out</exe>
+  <page>512</page>
+  <block>1028 0x200</block>
+  <flash_base>0x10000000</flash_base>
+  <args_doc>"--sysclk12m" -set system clock to 12MHz.
+  					"--sysclk24m" -set system clock to 24MHz.
+  					"--sysclk48m" -set system clock to 48MHz.
+  					"--sysclk96m" -set system clock to 96MHz.
+  					"--v01" -set for SY0901.</args_doc>
+</flash_device>
